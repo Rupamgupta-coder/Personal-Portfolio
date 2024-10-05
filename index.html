@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+   
+    
+</head>
+
+<body>
+    
+        <div class="nav">
+                
+               <div class="navh1">
+                <h1><span style="color: brown;">Rupam</span>Gupta</h1>
+               </div>
+               
+						
+              
+               <ul class="navoptions" >
+
+
+               <li> <a class="pins" href="#home">Home</a></li> 
+               <li><a  class="pins" href="#about">About</a></li> 
+               <li><a  class="pins" href="#skills">Skills</a></li>
+               <li> <a  class="pins" href="#education">Education</a></li>
+               <li><a  class="pins" href="#projects">Projects</a></li>
+             
+               </ul>
+               <!-- <div class="logo"><i class="ri-menu-line"></i></div> -->
+               <div class="navbutton">
+                <li><a href="#contact"><button  class="new" > Contact Me</button></a></li>
+                 </div>
+               
+        </div>
+        <section class="hero" >
+            <div class="lefthero">
+             
+               <div class="heropara">
+                 <P> I am Rupam Gupta</p>
+               </div>
+               <span id="typing-animation">
+                  <!-- <div class="heroh1">
+                    <h1><span style="color: brown;"> Frontend</span> Developer</h1>
+               
+                  </div> -->
+                  </span>
+                 
+               
+                  <div class="herobutton">
+                           <div class="button1"><p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">HIRE ME</p></div>
+                        
+                  </div>
+                 
+                  <script>
+
+                    // Initialize the typing animation
+                    const typingAnimationElement = document.getElementById('typing-animation');
+        
+                    // Create an array of typing text
+                    const typingTexts = [
+                    'AIML STUDENT ',
+                    'FRONTEND DEVELOPER',
+                    
+                    
+                    ];
+        
+                    // Create a function to display the typing animation for a given text
+                    function playTypingAnimation(text) {
+                    // Loop through each character and add it to the element
+                    for (let i = 0; i < text.length; i++) {
+                      setTimeout(() => {
+                      typingAnimationElement.textContent += text[i];
+                      }, i * 200); // Increase the delay to slow down the typing animation
+                    }
+        
+                    // Once the animation is complete, reset the text and start over
+                    setTimeout(() => {
+                      typingAnimationElement.textContent = '';
+                      playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                    }, text.length * 200);
+                    }
+        
+                    // Start the typing animation loop
+                    playTypingAnimation(typingTexts[0]);
+        
+                    </script>
+        
+                   
+                  
+                
+            </div>
+            <div class="righthero">
+                <div class="heroimage">
+                      <img height="600px" width="600px"  src="bg1.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="about" >
+
+          <h1 style="color: goldenrod;"><span style="color: brown;">ABOUT</span>ME</h1>
+          <div id="about">
+          <div class="aboutleft">
+           
+            <img height="500px"; width="500px"   ;     src="rup.png" alt="">
+          </div>
+          <div class="aboutright">
+
+            <p >   I aim to be a full stack Developer, currently pursuing Btech CSE AIML, at Techno Main Salt Lake
+                    </p>
+
+                    <h3 style="color: antiquewhite; font-size: 15px;" >HOBBIES</h3>
+                    <div class="hobbies">
+                      <div id="gym"></div>
+                    <div id="reading"></div>
+                    <div id="cooking"></div>
+                    
+
+                    </div>
+          </div>
+                    
+          </div>
+        </section>
+
+        <section class="skills" id="skills">
+          <h1> SKILLS</h1>
+                <div class="list">
+                     <div id="box1" ></div>
+                     <div id="box2"  ></div>
+                     <div  id="box3" ></div>
+                     <div  id="box4"></div>
+                </div>
+          
+        </section>
+        <section class="education" id="education">
+          <h1 style="color: goldenrod;">EDUCATION</h1>
+           <div class="degrees">
+          <div id="hs"><h2> Bishop Morrow School</h2>Percentage:80%<P></P><a href="https://bmskrishnagar.in/">To know More</a></div>
+          <div id="graduation"><h2>Techno Main Salt Lake</h2><P>Still Pursing</P><a href="https://www.ticollege.ac.in/">To know more</a></div>
+           </div>
+          </section>
+        
+       
+        <section class="Projects">
+          <h1>PROJECTS</h1>
+          
+          <div id="projects">
+          
+          <div id="weather">
+
+            <h3> Weather website made using Html, Css , JS</h3>
+            <img height="300px"    width="300px"    src="weatherimg.png" alt="">
+            <a href="https://github.com/Rupamgupta-coder/Weather">GITHUB</a>
+            <a href="https://rupamgupta-coder.github.io/Weather/">Weather Website</a>
+          </div>
+          <div id="portfolio">
+            <h2>Personal Portfolio made using Html,Css, JS</h2>
+            <img height="300px"    width="300px" src="templateimg.webp" alt="">
+            <a href="https://github.com/Rupamgupta-coder/Rupamgupta">Github</a>
+          </div>
+        </div>
+        </section>
+        
+        <section id="contact">
+          <h1>CONTACT ME</h1>
+        <div class="contact">
+          <div id="instagram"><a href="https://www.instagram.com/realrupamgupta"> INSTAGRAM </a></div>
+          <div id="github"><a href="https://github.com/dashboard">GITHUB</a></div>
+          <div id="email"><a href="mailto:rupamgupta9932@gmail.com ">Send Email</a></div>
+          <div id="ph"><h1 style="color: black;">9932375777</h1></div>
+        </div>
+      </section>
+        <script src="portfolio.js" defer></script>
+        
+        
+
+
+</body>
+ 
+</html>
